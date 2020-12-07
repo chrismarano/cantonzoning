@@ -1,0 +1,175 @@
+Christopher Marano 
+21st Century Law Final Project 
+Description: These prompts allow you to find out if you are able to build your desired structure in residential zoning districts in Canton, Massachusetts; as well as which ones are available to you. You will then be given a link to a Documate Interview to fill out your building permit if you are able to. 
+
+Q(HEIGHT): Is the proposed structure less than 40 feet tall? 
+A: Yes 
+	Q(1.1):GOTO:RYS
+A: No 
+	Q(1.2):GOTO:VSAD
+Q(RYS): Is there the at least 35 feet between very back-end of the proposed structure and the back-end of the lot it is located it is on?
+A: Yes 
+	Q(2.1):GOTO:LCP
+A: No
+	Q(2.2):GOTO:VSAD
+Q(LCP): Does the proposed structure cover less than or equal to 25% of the lot it is located on? 
+A: Yes
+	Q(3.1):GOTO:SRAA
+A: No 
+	Q(3.2):GOTO:GRL
+Q(GRL): Does the proposed structure cover less than or equal to 30% of the lot it is located on?
+A: Yes
+	Q(4.1):GOTO:GR
+A: No 
+	Q(4.2):GOTO:VSAD
+Q(SRAA): Is the lot where the proposed structure will be located larger than 45,000 square feet?
+A: Yes
+	Q(5.1):GOTO:SRAAW
+A: No
+	Q(5.2):GOTO:SRA
+Q(SRAAW): Is the lot at least 200 feet wide?
+A: Yes
+	Q(6.1):GOTO:SRAAF
+A: No
+	Q(6.2):GOTO:SRAW
+Q(SRAAF): Does the subject lot abut the street by more than 125 feet? 
+A: Yes
+	Q(7.1):GOTO:SRAAFS
+A: No
+	Q(7.2):GOTO:SRAF
+Q(SRAAFS): Is there at least 60 feet between the very front end of the lot and the front of the proposed structure?
+A: Yes
+	Q(8.1):GOTO:SRAASY
+A: No 
+	Q(8.2):GOTO:SRAFS
+Q(SRAASY): Is there 40 or more feet in between each the left and right sides of the proposed structure and the ends of the lot on their respective sides? (40 feet of undeveloped land on the right side before the beginning of the structure right side of the structure and the same on the left)
+A: Yes 
+	Q(9.1):GOTO:YAY1
+A:No 
+	Q(9.2):GOTO:SRASY
+Q(SRA): Is the lot where the proposed structure will be located larger than 30,000 square feet?
+A:Yes
+	Q(10.1):GOTO:SRAW
+A:No
+	Q(10.2):GOTO:SRB
+Q(SRAW): Is the lot at least 150 feet wide? 
+A: Yes 
+	Q(11.1):GOTO:SRAF
+A: No
+	Q(11.2):GOTO:SRBW
+Q(SRAF): Does the subject lot abut the street by more than 100? 
+A: Yes
+	Q(12.1):GOTO:SRAFS
+A: No
+	Q(12.2):GOTO:VSAD
+Q(SRAFS): Is there at least 40 feet between the very front end of the lot and the front of the proposed structure?
+A: Yes 
+	Q(13.1):GOTO:SRASY
+A: No 
+	Q(13.2):GOTO:SRBFS
+Q(SRASY): Is there 20 or more feet in between each the left and right sides of the proposed structure and the ends of the lot on their respective sides? (20 feet of undeveloped land on the right side before the beginning of the right side of the structure and the same on the left)
+A: Yes 
+	Q(14.1):GOTO:YAY2
+A: No 
+	Q(14.2):GOTO:SRBSY
+
+Q(SRB): Is the lot where the proposed structure will be located larger than 15,000 square feet?
+A: Yes 
+	Q(15.1):GOTO:SRBW
+A: No 
+	Q(15.2):GOTO:SRC
+Q(SRBW): Is the lot at least 115 feet wide? 
+A: Yes 
+	Q(16.1):GOTO:SRBF
+A: No 
+	Q(16.2):GOTO:SRCW
+Q(SRBF): Does the subject lot abut the street by more than 100 feet?
+A: Yes
+	Q(17.1):GOTO:SRBFS
+A:No 
+	Q(17.2):GOTO:VSAD
+Q(SRBFS): Is there at least 30 feet between the very front end of the lot and the front of the proposed structure?
+A: Yes
+	Q(18.1):GOTO:SRBSY
+A: No
+	Q(18.2):GOTO:VSAD
+Q(SRBSY): Is there 15 or more feet in between each the left and right sides of the proposed structure and the ends of the lot on their respective sides? (15 feet of undeveloped land on the right side before the beginning of the right side of the structure and the same on the left)
+A: Yes 
+	Q(19.1):GOTO:YAY3
+A: No
+	Q(19.2):GOTO:SRCSY
+Q(SRC): Is the lot where the proposed structure will be located larger than 10,000 square feet?
+A: Yes
+	Q(20.1):GOTO:SRCW
+A: No 
+	Q(20.2):GOTO:VSAD
+Q(SRCW): Is the lot at least 100 feet wide? 
+A: Yes 
+	Q(21.1):GOTO:SRCF
+A: No 
+	Q(21.2):GOTO:VSAD
+Q(SRCF):Does the subject lot abut the street by more than 100 feet?
+A: Yes 
+	Q(22.1):GOTO:SRCFS
+A: No 
+	Q(22.2):GOTO:VSAD
+Q(SRCFS): Is there at least 30 feet between the very front end of the lot and the front of the proposed structure?
+A: Yes
+	Q(23.1):GOTO:SRCSY
+A: No 
+	Q(23.2):GOTO:VSAD
+Q(SRCSY): Is there 10 or more feet in between each the left and right sides of the proposed structure and the ends of the lot on their respective sides? (10 feet of undeveloped land on the right side before the beginning of the right side of the structure and the same on the left)
+A: Yes 
+	Q(24.1):GOTO:YAY4
+A: No 	
+	Q(24.2):GOTO:VSAD
+Q(GR): Is the lot where the proposed structure will be located larger than 10,000 square feet?
+A: Yes
+	Q(25.1):GOTO:GRW
+A: No 
+	Q(25.2):GOTO:VSAD
+Q(GRW): Is the lot at least 100 feet wide? 
+A: Yes
+	Q(26.1):GOTO:GRF 
+A: No
+	Q(26.2):GOTO:VSAD
+Q(GRF): Does the subject lot abut the street by more than 100 feet?
+A: Yes 
+	Q(27.1):GOTO:GRFS
+A: No
+	Q(27.2):GOTO:VSAD
+Q(GRFS): Is there at least 30 feet between the very front end of the lot and the front of the proposed structure?
+A: Yes
+	Q(28.1):GOTO:GRSY
+A: No 
+	Q(28.2):GOTO:VSAD
+Q(GRSY): Is there 10 or more feet in between each the left and right sides of the proposed structure and the ends of the lot on their respective sides? (10 feet of undeveloped land on the right side before the beginning of the right side of the structure and the same on the left)
+A: Yes 
+	Q(29.1):GOTO:YAY5
+A: No
+	Q(29.2):GOTO:VSAD
+Q(YAY1): Great! Based on your answers you will be able to build in any of the residential zoning districts in Canton, Massachusetts. Would you like a link to a questionnaire that will allow you to fill out your building permit online?
+A: Yes 
+	Q(30.1): Good luck, click on the bubble below!
+	A[https://a2j.documate.org/interview?i=docassemble.playground545%3AChris+Marano+21st+Century+Law.yml#page1]:
+Q(YAY2): Great! Based on your answers you will be able to build Canton's Single Residence A, B, or C district; as well as in the General Residence District. Would you like a link to a questionnaire that will allow you to fill out your building permit online?
+A: Yes 
+	Q(31.1): Good luck, click on the bubble below!
+	A[https://a2j.documate.org/interview?i=docassemble.playground545%3AChris+Marano+21st+Century+Law.yml#page1]:
+Q(YAY3): Great! Based on your answers you will be able to build Canton's Single Residence B, or C district; as well as in the General Residence District. Would you like a link to a questionnaire that will allow you to fill out your building permit online?
+A: Yes 
+	Q(32.1): Good luck, click on the bubble below!
+	A[https://a2j.documate.org/interview?i=docassemble.playground545%3AChris+Marano+21st+Century+Law.yml#page1]:
+Q(YAY4): Great! Based on your answers you will be able to build Canton's Single Residence C district; as well as in the General Residence District. Would you like a link to a questionnaire that will allow you to fill out your building permit online?
+A: Yes 
+	Q(33.1): Good luck, click on the bubble below!
+	A[https://a2j.documate.org/interview?i=docassemble.playground545%3AChris+Marano+21st+Century+Law.yml#page1]:
+Q(YAY5): Great! Based on your answers you will be able to build Canton's General Residence District. Would you like a link to a questionnaire that will allow you to fill out your building permit online?
+A: Yes 
+	Q(34.1): Good luck, click on the bubble below!
+	A[https://a2j.documate.org/interview?i=docassemble.playground545%3AChris+Marano+21st+Century+Law.yml#page1]:
+Q(VSAD): Unfortunately, to build in any of the residential zoning districts in Canton you will need to apply for a variance or special permit. Would you like a link to the town's forms and applications section to get started? 
+A: Yes
+	Q(35.1): Good luck, click the bubble below!
+	A[https://www.town.canton.ma.us/440/Forms-and-Applications]:
+
